@@ -1,5 +1,5 @@
 #!/bin/bash
-# cd ./init-debian; chmod +x ./root.sh; ./root.sh
+# cd ./init-debian; chmod +x ./main.sh; ./main.sh
 if [[ $EUID -ne 0 ]]; then
    echo 'This script must be run as root' 
    exit 1
@@ -16,5 +16,7 @@ cd ~
 git clone https://gitlab.com/loicbourgois/init-debian.git
 git pull origin master
 cd ~/init-debian
+chmod +x ./1.sh
 ./1.sh
+chmod +x ./2.sh
 ./2.sh

@@ -4,7 +4,7 @@ sudo gedit '/etc/apt/sources.list'
 sudo apt-get install aptitude
 sudo aptitude install git
 cd ~
-git clone https://gitlab.com/loicbourgois/init-debian.git
+git clone git@github.com:loicbourgois/init-debian.git
 git pull origin master
 cd ~/init-debian
 chmod +x ./1.sh

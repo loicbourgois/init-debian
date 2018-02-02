@@ -1,5 +1,4 @@
 #!/bin/bash
-echo 'Edit sources.list'
 sudo apt-get install aptitude
 sudo aptitude install git
 cd ~

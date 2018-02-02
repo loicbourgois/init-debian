@@ -4,6 +4,8 @@ if [[ $EUID -ne 0 ]]; then
    echo 'This script must be run as root' 
    exit 1
 fi
+echo 'Edit sources.list'
+gedit '/etc/apt/sources.list'
 apt-get install sudo
 #https://unix.stackexchange.com/questions/179954/username-is-not-in-the-sudoers-file-this-incident-will-be-reported/258865#258865
 echo 'Add this line to /etc/sudoers'

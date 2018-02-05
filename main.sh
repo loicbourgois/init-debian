@@ -1,5 +1,5 @@
 #!/bin/bash
-# cd ./init-debian; chmod +x ./main.sh; ./main.sh
+# chmod +x ./main.sh; ./main.sh;
 if [[ $EUID -ne 0 ]]; then
    echo 'This script must be run as root' 
    exit 1

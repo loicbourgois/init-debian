@@ -13,8 +13,8 @@ apt-get install sudo
 echo 'Add the following line to /etc/sudoers'
 echo 'user        ALL=(ALL)      ALL'
 read -p 'Press enter to continue'
-visudo
-adduser user sudo
+/usr/sbin/visudo
+/usr/sbin/adduser user sudo
 echo 'You can now run ./0.sh'
 echo 'Don\'t forget to run chmod +x 0.sh'
 su user
